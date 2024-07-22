@@ -1,13 +1,12 @@
-package com.example.ItisFinalProject.service;
+package com.example.SpringTestProject.service;
 
-import com.example.ItisFinalProject.entity.Role;
-import com.example.ItisFinalProject.entity.User;
-import com.example.ItisFinalProject.exception.ClientException;
-import com.example.ItisFinalProject.exception.ErrorCode;
-import com.example.ItisFinalProject.repository.UserRepository;
-import com.example.ItisFinalProject.security.SecurityUser;
+import com.example.SpringTestProject.entity.Role;
+import com.example.SpringTestProject.entity.User;
+import com.example.SpringTestProject.exception.ClientException;
+import com.example.SpringTestProject.exception.ErrorCode;
+import com.example.SpringTestProject.repository.UserRepository;
+import com.example.SpringTestProject.security.SecurityUser;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

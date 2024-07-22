@@ -1,9 +1,9 @@
-package com.example.ItisFinalProject.controller;
+package com.example.SpringTestProject.controller;
 
-import com.example.ItisFinalProject.entity.User;
-import com.example.ItisFinalProject.exception.ClientException;
-import com.example.ItisFinalProject.security.SecurityUser;
-import com.example.ItisFinalProject.service.UserService;
+import com.example.SpringTestProject.entity.User;
+import com.example.SpringTestProject.exception.ClientException;
+import com.example.SpringTestProject.security.SecurityUser;
+import com.example.SpringTestProject.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;

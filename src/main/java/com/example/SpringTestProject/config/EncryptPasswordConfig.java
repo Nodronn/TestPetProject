@@ -1,4 +1,4 @@
-package com.example.ItisFinalProject.config;
+package com.example.SpringTestProject.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.example.ItisFinalProject.exception;
+package com.example.SpringTestProject.exception;
 
 public class ClientException extends Exception {
     public ErrorCode clientErrorCode;

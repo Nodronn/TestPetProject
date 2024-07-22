@@ -1,4 +1,4 @@
-package com.example.ItisFinalProject.entity;
+package com.example.SpringTestProject.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

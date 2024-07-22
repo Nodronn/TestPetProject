@@ -1,4 +1,4 @@
-package com.example.ItisFinalProject.exception;
+package com.example.SpringTestProject.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

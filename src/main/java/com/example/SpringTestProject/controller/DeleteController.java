@@ -1,6 +1,6 @@
-package com.example.ItisFinalProject.controller;
+package com.example.SpringTestProject.controller;
 
-import com.example.ItisFinalProject.service.UserService;
+import com.example.SpringTestProject.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
