@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .userPage{
+            border-radius: 15px;
+            background: #DADADA;
+            border: 1px #DADADA;
+            padding: 0px 0px 10px 0px;
+            width: 370px;
+            box-shadow: 3px 5px 7px #393939;
+        }
+
+        .userPageTitle{
+            background: #40BD59;
+            text-align: center;
+            color: white;
+            font-family: Arial;
+            font-size: 35px;
+            width: 350px;
+            padding: 10px;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        table {
+            display:flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<div class="userPage">
+    <div class="userPageTitle">
+        User information
+    </div>
+    <div th:object="${loggedUser}">
+        <table>
+            <tr><td th:text="${loggedUser.id}" hidden="hidden"></td></tr>
+            <tr><th>First name </th><td th:text="${loggedUser.firstName}"></td></tr>
+            <tr><th>Last name </th><td th:text="${loggedUser.lastName}"></td></tr>
+            <tr><th>Email </th><td th:text="${loggedUser.email}"></td></tr>
+            <tr><th>Country </th><td th:text="${loggedUser.country}"></td></tr>
+        </table>
+    </div>
+
+    <p align="center"><a th:href="@{/edit/{id}(id = ${loggedUser.id})}"><button>Edit.</button></a> <br></p>
+    <div>
+        <form action="#" th:action="@{/logout}" method="post">
+            <p align="center"><input type="submit" value="Logout"/></p>
+        </form>
+    </div>
+    <p align="center"><a href="/">Return to home page.</a></p>
+</div>
+
+</body>
+</html>
